@@ -1,0 +1,2 @@
+rootProject.name = "Eva Scientific Calculator"
+include ':app'
