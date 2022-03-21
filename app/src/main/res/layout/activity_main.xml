@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_background"
+    android:id="@+id/drawerlayout"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Scientific Calculator"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/secondBrown">
+    </androidx.appcompat.widget.Toolbar>
+
 
     <TextView
         android:id="@+id/previousCalculationView"
@@ -21,15 +35,15 @@
         android:id="@+id/displayEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"
         android:ems="10"
         android:textAlignment="textEnd"
         android:inputType="textPersonName"
         android:hint="@string/displayHint"
-        android:textColorHint="@color/white"
-        android:textSize="48sp"
+        android:textColorHint="@color/greyAccent"
+        android:textSize="38sp"
         android:importantForAutofill="no"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,13 +58,13 @@
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
             android:id="@+id/button"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:background="@drawable/dark_buttons"
             android:contentDescription="@string/backspace"
             android:onClick="backspaceBTNPush"
@@ -58,7 +72,8 @@
             app:layout_constraintEnd_toEndOf="@+id/button5"
             app:layout_constraintStart_toStartOf="@+id/button5"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/backspace" />
+            app:srcCompat="@drawable/backspace"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/button2"
@@ -322,25 +337,6 @@
             app:layout_constraintStart_toEndOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button17" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-4079532256284221/6296468627">
-        </com.google.android.gms.ads.AdView>
-
-
-    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

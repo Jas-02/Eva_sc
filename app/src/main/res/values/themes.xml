@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.EvaScientificCalculator" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/lightBrown</item>
-        <item name="colorPrimaryVariant">@color/lightBrown</item>
+        <item name="colorPrimary">@color/secondBrown</item>
+        <item name="colorPrimaryVariant">@color/secondBrown</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

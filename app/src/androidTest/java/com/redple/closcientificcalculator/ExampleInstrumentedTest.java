@@ -1,4 +1,4 @@
-package com.redple.evascientificcalculator;
+package com.redple.closcientificcalculator;
 
 import android.content.Context;
 

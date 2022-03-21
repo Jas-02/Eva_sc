@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.redple.evascientificcalculator">
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.redple.closcientificcalculator">
 
 
     <application
@@ -12,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EvaScientificCalculator">
-        <activity android:name="com.redple.evascientificcalculator.MainActivity">
+        <activity android:name="com.redple.closcientificcalculator.MainActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4079532256284221~5987485043"/>
     </application>
 
 </manifest>
